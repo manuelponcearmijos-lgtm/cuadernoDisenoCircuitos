@@ -1,4 +1,6 @@
+<p align="center">
  # ⚡ Portafolio Digital: Diseño de Circuitos
+</p> 
 
 <p align="center">
   <img src="https://github.com/user-attachments/assets/035b87ae-785b-4541-90f0-8c6d19e1c94f" width="120" alt="Logo institucional UNL">
