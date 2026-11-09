@@ -113,7 +113,6 @@ flowchart LR
     class A,C pregunta
 ```
 
-> [!TIP]
 > 💡 **Tip:** en electrónica digital el transistor trabaja solo en **corte** (0 lógico) y **saturación** (1 lógico); la región activa se usa en amplificadores.
 
 ### ✏️ Ejemplo resuelto: encender un LED con un NPN
@@ -161,10 +160,8 @@ $$I_B = \frac{4{,}3}{4700} \approx 0{,}91\ \text{mA} \qquad \beta_{min} I_B = 10
 | 0 V | Corte | Apagado |
 | 5 V | Saturación | Encendido (≈ 8,5 mA) |
 
-> [!WARNING]
 > ⚠️ **Cuidado:** sin $R_B$ la unión base‑emisor recibe una corriente excesiva y el transistor puede dañarse; sin $R_C$ el LED se quema.
 
-> [!IMPORTANT]
 > 📌 **Recuerda**
 > - NPN: conduce cuando la base es ≈ 0,7 V más positiva que el emisor.
 > - Interruptor = corte ↔ saturación. Amplificador = región activa.
@@ -209,7 +206,6 @@ El **álgebra de Boole** trabaja con variables que solo toman los valores **0** 
 | Asociativa | $A + (B + C) = (A + B) + C$ | $A(BC) = (AB)C$ |
 | Distributiva | $A + BC = (A + B)(A + C)$ | $A(B + C) = AB + AC$ |
 
-> [!TIP]
 > 💡 **Principio de dualidad:** si una igualdad es válida, también lo es su dual, que se obtiene intercambiando $+ \leftrightarrow \cdot$ y $0 \leftrightarrow 1$.
 
 ### 🗺️ Mapas de Karnaugh
@@ -257,10 +253,8 @@ Simplificar $F(A,B,C,D) = \sum m(0, 1, 2, 5, 8, 9, 10)$.
 
 $$\boxed{F = \overline{B}\,\overline{C} + \overline{B}\,\overline{D} + \overline{A}\,\overline{C}D}$$
 
-> [!WARNING]
 > ⚠️ **Cuidado:** el orden de filas y columnas es **00, 01, 11, 10**, no el binario natural. Si usas 00, 01, 10, 11 los vecinos dejan de diferir en un solo bit y las agrupaciones son incorrectas.
 
-> [!IMPORTANT]
 > 📌 **Recuerda**
 > - Grupo de $2^k$ celdas elimina $k$ variables.
 > - Grupos grandes → términos cortos; pocos grupos → menos términos.
@@ -355,10 +349,8 @@ Se eliminan repetidos ($A\overline{B}C$ aparece dos veces):
 
 $$\boxed{F = \overline{A}\,\overline{B}C + A\overline{B}\,\overline{C} + A\overline{B}C + AB\overline{C} + ABC}$$
 
-> [!WARNING]
 > ⚠️ **Cuidado:** $\overline{AB} \neq \overline{A}\,\overline{B}$. La barra larga sobre un producto **no** se reparte sin cambiar el operador.
 
-> [!IMPORTANT]
 > 📌 **Recuerda**
 > - De Morgan: rompe la barra, cambia el signo.
 > - Cita la ley usada en cada paso de una simplificación.
@@ -460,13 +452,10 @@ Ambas expresiones dan la misma tabla de verdad.
  B,C ──[AND]──┘                     B,C ──[OR]──┘
 ```
 
-> [!TIP]
 > 💡 **Tip:** usa SOP cuando la función tiene pocos 1 y POS cuando tiene pocos 0: así hay menos términos que escribir.
 
-> [!WARNING]
 > ⚠️ **Cuidado:** en un maxitérmino la regla se invierte: bit **1** → variable **negada**. Es el error más frecuente.
 
-> [!IMPORTANT]
 > 📌 **Recuerda**
 > - $m_i$ → producto, vale 1 en la fila $i$. $M_i$ → suma, vale 0 en la fila $i$.
 > - $\sum m$ usa las filas con 1; $\prod M$ usa las filas con 0.
@@ -599,10 +588,8 @@ Restar equivale a sumar el complemento a 2: $A - B = A + \overline{B} + 1$. Se r
 
 Resultado: $S = 0100_2 = 4_{10}$ ✅. El acarreo final $C_4 = 1$ se descarta e indica que el resultado es positivo.
 
-> [!WARNING]
 > ⚠️ **Cuidado:** en el sumador en cascada cada etapa espera el acarreo de la anterior; con muchos bits el retardo crece. Por eso existen sumadores con acarreo anticipado (*carry look‑ahead*).
 
-> [!IMPORTANT]
 > 📌 **Recuerda**
 > - Semisumador: $S = A \oplus B$, $C = AB$ (no tiene $C_{in}$).
 > - Sumador completo: $S = A \oplus B \oplus C_{in}$, $C_{out} = AB + AC_{in} + BC_{in}$.
