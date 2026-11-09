@@ -1,124 +1,111 @@
- <div align="center">
+<div align="center">
 
-# ⚡ TRANSISTORES ⚡
+# ⚡ FUNDAMENTOS DE ELECTRICIDAD Y ELECTRÓNICA ⚡
 
-### 🔌 Fundamentos · Funcionamiento · Aplicaciones
+### 🔋 Unidad 1 · Diseño de Circuitos · Segundo Ciclo
 
-![Electrónica](https://img.shields.io/badge/ELECTRÓNICA-TRANSISTORES-00BFFF?style=for-the-badge)
-![Circuitos](https://img.shields.io/badge/DISEÑO-CIRCUITOS-7B2CBF?style=for-the-badge)
+![Electrónica](https://img.shields.io/badge/ELECTRÓNICA-FUNDAMENTOS-00BFFF?style=for-the-badge)
+![Unidad](https://img.shields.io/badge/UNIDAD-1-0078D4?style=for-the-badge)
 
 </div>
 
 ---
 
-## 🔋 1. ¿Qué es un transistor?
+## ⚡ 1. Magnitudes eléctricas
 
-Un **transistor** es un componente semiconductor utilizado para amplificar señales eléctricas y funcionar como interruptor electrónico. Es fundamental en computadoras, teléfonos, sistemas de control y circuitos digitales.
+| Magnitud | Símbolo | Unidad | Descripción |
+|---|:---:|:---:|---|
+| Voltaje (tensión) | $V$ | Voltio (V) | Diferencia de potencial que impulsa a las cargas por el circuito. |
+| Corriente | $I$ | Amperio (A) | Cantidad de carga que circula por un punto en un segundo. |
+| Resistencia | $R$ | Ohmio (Ω) | Oposición que ofrece un material al paso de la corriente. |
+| Potencia | $P$ | Vatio (W) | Energía entregada o consumida por unidad de tiempo. |
 
-<div align="center">
+La potencia se calcula como:
 
-![Transistor electrónico](https://upload.wikimedia.org/wikipedia/commons/thumb/3/3a/Transistors.agr.jpg/640px-Transistors.agr.jpg)
+$$P = V \cdot I$$
 
-*Figura 1. Diferentes tipos de transistores.*
+---
 
-</div>
+## 📐 2. Ley de Ohm
 
-## ⚙️ 2. Partes principales
+La corriente que circula por un conductor es directamente proporcional al voltaje aplicado e inversamente proporcional a su resistencia:
 
-En un transistor bipolar (BJT) encontramos tres terminales:
+$$V = I \cdot R \qquad I = \frac{V}{R} \qquad R = \frac{V}{I}$$
 
-| Terminal | Función |
-|---|---|
-| **Base (B)** | Controla la conducción. |
-| **Colector (C)** | Recibe la corriente principal en un NPN típico. |
-| **Emisor (E)** | Permite la salida de la corriente en un NPN típico. |
+Combinando con la fórmula de potencia se obtiene también:
 
-## 🔌 3. Tipos de transistores
+$$P = I^2 R = \frac{V^2}{R}$$
 
-<div align="center">
+### 💡 Ejemplo
 
-| 🔵 Transistor NPN | 🟣 Transistor PNP |
-|---|---|
-| ![Transistor NPN](https://upload.wikimedia.org/wikipedia/commons/thumb/1/1c/NPN_BJT.svg/220px-NPN_BJT.svg.png) | ![Transistor PNP](https://upload.wikimedia.org/wikipedia/commons/thumb/6/60/PNP_BJT.svg/220px-PNP_BJT.svg.png) |
-| Conduce cuando la base tiene suficiente polarización positiva respecto al emisor. | Conduce cuando la base tiene suficiente polarización negativa respecto al emisor. |
+Una resistencia de $220\ \Omega$ se conecta a una fuente de $9\ \text{V}$:
 
-</div>
+$$I = \frac{9}{220} \approx 0{,}041\ \text{A} = 41\ \text{mA}$$
 
-**Otros tipos importantes:**
+$$P = V \cdot I = 9 \times 0{,}041 \approx 0{,}37\ \text{W}$$
 
-- 🔹 **MOSFET:** controlado por tensión, muy utilizado en electrónica digital.
-- 🔹 **JFET:** transistor de efecto de campo empleado en circuitos electrónicos.
-- 🔹 **BJT:** transistor bipolar usado en amplificación y conmutación.
+> ⚠️ Con $0{,}37\ \text{W}$ una resistencia común de $\tfrac{1}{4}\ \text{W}$ se sobrecalentaría. Por eso, además del valor óhmico, hay que verificar la potencia que soporta el componente.
 
-## 💡 4. ¿Cómo funciona?
+---
 
-Un transistor puede trabajar principalmente en dos modos:
+## 🔌 3. Componentes electrónicos básicos
 
-<details>
-<summary><b>🟢 Modo de corte — Interruptor abierto</b></summary>
+| Componente | Función | Detalle clave |
+|---|---|---|
+| **Resistencia** | Limita la corriente y divide tensiones. | Se identifica por su código de colores y su potencia nominal. |
+| **Condensador** | Almacena energía en un campo eléctrico. | Se mide en faradios (F); los electrolíticos tienen polaridad. |
+| **Diodo** | Permite el paso de corriente en un solo sentido. | Conduce en polarización directa (≈ 0,7 V en silicio). |
+| **LED** | Diodo que emite luz al conducir. | Necesita resistencia limitadora en serie. |
 
-La corriente de control es insuficiente y el transistor permanece apagado, por lo que prácticamente no circula corriente entre colector y emisor en un BJT.
+### 💡 Resistencia limitadora para un LED
 
-</details>
+$$R = \frac{V_{fuente} - V_{LED}}{I_{LED}}$$
 
-<details>
-<summary><b>🔴 Modo de saturación — Interruptor cerrado</b></summary>
+Con una fuente de $5\ \text{V}$, un LED rojo ($V_{LED} \approx 2\ \text{V}$) y $I_{LED} = 10\ \text{mA}$:
 
-El transistor recibe suficiente corriente de base y permite que circule corriente entre colector y emisor, dentro de los límites del componente.
+$$R = \frac{5 - 2}{0{,}010} = 300\ \Omega \;\Rightarrow\; \text{se usa el valor comercial de } 330\ \Omega$$
 
-</details>
+---
 
-<details>
-<summary><b>🔵 Modo activo — Amplificación</b></summary>
+## 🔋 4. Fuentes de alimentación
 
-Una pequeña variación en la corriente de base puede controlar una variación mayor en la corriente del colector, permitiendo amplificar señales.
+- **Corriente continua (CC):** el voltaje mantiene siempre la misma polaridad (pilas, baterías, fuentes reguladas).
+- **Corriente alterna (CA):** el voltaje cambia de polaridad periódicamente (red eléctrica domiciliaria).
+- **Fuente ideal:** mantiene su voltaje sin importar la carga.
+- **Fuente real:** tiene resistencia interna y su voltaje cae al aumentar la corriente demandada.
 
-</details>
+---
 
-## 🧪 5. Diseño de un circuito con transistor
+## 🧪 5. Instrumentos de medición: el multímetro
 
-### 💡 Encendido de un LED mediante un transistor NPN
+| Medición | Conexión del instrumento | Precaución |
+|---|---|---|
+| **Voltaje** | En **paralelo** con el elemento. | Seleccionar CC o CA según corresponda. |
+| **Corriente** | En **serie** (se abre el circuito). | Nunca conectar en paralelo: puede dañar el equipo. |
+| **Resistencia** | En paralelo, con el circuito **sin alimentación**. | Retirar el componente o desconectar la fuente. |
+
+---
+
+## 📊 6. Simbología electrónica
 
 ```text
-           +V
-            |
-           [R2]
-            |
-           LED
-            |
-            C
-Entrada─[R1]─B   Q1 (NPN)
-            E
-            |
-           GND
+Resistencia      Condensador      Diodo          LED            Fuente CC
+  ─/\/\/─          ─┤├─           ─▶|─          ─▶|─ ↗↗         ─┤|├─
 ```
 
-**Componentes:**
+Interpretar correctamente los símbolos permite leer esquemas y reproducirlos luego en un simulador o en un montaje real.
 
-- 🔋 Fuente de alimentación.
-- ⚙️ Transistor NPN.
-- 💡 LED.
-- 🔧 Resistencias limitadoras.
-- 🔌 Cables de conexión.
+---
 
-**Funcionamiento:** cuando la señal de entrada activa la base, el transistor conduce y permite encender el LED. Al retirar la señal, el LED se apaga si el transistor vuelve al corte.
+## 🧾 Evidencias
 
-> ⚠️ Los valores de las resistencias y la tensión de alimentación deben seleccionarse según el transistor y el LED utilizados.
+> 📌 *Pendiente de completar:* capturas de simulación del circuito del LED, fotografías de mediciones con multímetro y comparación entre valores calculados y medidos.
 
-## 🖥️ 6. Aplicaciones de los transistores
-
-<div align="center">
-
-| 💻 Computación | 🔊 Electrónica | 🤖 Automatización |
-|---|---|---|
-| Procesadores y memoria | Amplificadores de audio | Control de motores |
-| Circuitos lógicos | Fuentes de alimentación | Sensores y actuadores |
-
-</div>
+---
 
 ## 🎯 Conclusión
 
-Los transistores son componentes esenciales en el diseño de circuitos electrónicos porque permiten controlar la corriente, amplificar señales y realizar funciones de conmutación. Comprender sus terminales, tipos y modos de funcionamiento facilita el diseño de circuitos prácticos y sistemas digitales.
+La Unidad 1 establece las bases para el resto de la asignatura: las magnitudes eléctricas, la Ley de Ohm y el reconocimiento de los componentes y la simbología permiten calcular y verificar circuitos sencillos, como la resistencia limitadora de un LED. Estas bases se aplican en la Unidad 2 al analizar y diseñar circuitos más completos.
 
 ---
 
@@ -128,156 +115,6 @@ Los transistores son componentes esenciales en el diseño de circuitos electrón
 
 *Portafolio Digital — Diseño de Circuitos | Segundo Ciclo*
 
-</div>
-
- <div align="center">
-
-# ⚡ COMPUERTAS LÓGICAS Y SISTEMAS BINARIOS ⚡
-
-### 💻 Diseño de Circuitos · Segundo Ciclo
-
-![Electrónica digital](https://img.shields.io/badge/ELECTRÓNICA-DIGITAL-00BFFF?style=for-the-badge)
-![Sistemas binarios](https://img.shields.io/badge/SISTEMAS-BINARIOS-7B2CBF?style=for-the-badge)
-![Lógica](https://img.shields.io/badge/DISEÑO-COMPUERTAS_LÓGICAS-FF6600?style=for-the-badge)
-
-</div>
-
----
-
-## 🔢 1. Sistemas binarios
-
-El **sistema binario** es un sistema de numeración de base 2 que utiliza únicamente los dígitos **0 y 1**. Es fundamental en las computadoras y los circuitos digitales, ya que permite representar y procesar información mediante señales eléctricas.
-
-### 💡 Conversión de binario a decimal
-
-Cada posición representa una potencia de 2, comenzando desde \(2^0\), de derecha a izquierda.
-
-**Ejemplo:**
-
-\[
-1011_2 = 1(2^3)+0(2^2)+1(2^1)+1(2^0)
-\]
-
-\[
-=8+0+2+1=\boxed{11_{10}}
-\]
-
-### 🔄 Tabla de equivalencias
-
-| Decimal | Binario |
-|:---:|:---:|
-| 0 | 0000 |
-| 1 | 0001 |
-| 2 | 0010 |
-| 3 | 0011 |
-| 4 | 0100 |
-| 5 | 0101 |
-| 6 | 0110 |
-| 7 | 0111 |
-| 8 | 1000 |
-| 9 | 1001 |
-| 10 | 1010 |
-
-**Operaciones binarias básicas:**
-
-- **Suma:** \(0+0=0\), \(0+1=1\), \(1+1=10\).
-- **Resta:** \(1-0=1\), \(1-1=0\).
-- **Multiplicación:** \(1\times1=1\); cualquier número multiplicado por 0 da 0.
-
----
-
-## ⚙️ 2. ¿Qué son las compuertas lógicas?
-
-Las **compuertas lógicas** son componentes electrónicos que reciben una o más entradas binarias y producen una salida según una operación lógica. Son la base de los procesadores, las memorias y los sistemas digitales.
-
-### 🔌 Principales compuertas lógicas
-
-| Compuerta | Operación | ¿Cuándo da 1? |
-|---|---|---|
-| AND | \(A\cdot B\) | Cuando ambas entradas son 1. |
-| OR | \(A+B\) | Cuando al menos una entrada es 1. |
-| NOT | \(\overline{A}\) | Cuando la entrada es 0. |
-| NAND | \(\overline{A\cdot B}\) | Cuando al menos una entrada es 0. |
-| NOR | \(\overline{A+B}\) | Cuando ambas entradas son 0. |
-| XOR | \(A\oplus B\) | Cuando las entradas son diferentes. |
-| XNOR | \(\overline{A\oplus B}\) | Cuando las entradas son iguales. |
-
-### 🧠 Tablas de verdad
-
-La tabla de verdad muestra todas las combinaciones posibles de entradas y sus salidas.
-
-**Compuertas de dos entradas:**
-
-| A | B | AND | OR | NAND | NOR | XOR | XNOR |
-|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
-| 0 | 0 | 0 | 0 | 1 | 1 | 0 | 1 |
-| 0 | 1 | 0 | 1 | 1 | 0 | 1 | 0 |
-| 1 | 0 | 0 | 1 | 1 | 0 | 1 | 0 |
-| 1 | 1 | 1 | 1 | 0 | 0 | 0 | 1 |
-
-**Compuerta NOT:**
-
-| A | Salida |
-|:---:|:---:|
-| 0 | 1 |
-| 1 | 0 |
-
----
-
-## 🔬 3. Diseño de circuitos lógicos
-
-Las compuertas pueden conectarse entre sí para construir circuitos que resuelven problemas mediante operaciones binarias.
-
-### 💡 Ejemplo: circuito AND
-
-```text
-Entrada A ───┐
-             ├── [ AND ] ─── Salida Y
-Entrada B ───┘
-```
-
-Su expresión lógica es:
-
-\[
-Y=A\cdot B
-\]
-
-La salida será 1 solamente cuando las entradas A y B sean iguales a 1.
-
-### 🚦 Ejemplo práctico: sistema de seguridad
-
-Un sistema tiene dos sensores: A (puerta) y B (ventana). La alarma se activa únicamente cuando ambos sensores detectan una apertura.
-
-\[
-\text{Alarma}=A\cdot B
-\]
-
-Este ejemplo representa una condición lógica AND y puede implementarse mediante un circuito digital.
-
----
-
-## 🛠️ 4. Aplicaciones en computación
-
-- 💻 **Procesadores:** ejecutan operaciones lógicas y aritméticas.
-- 🧠 **Memorias digitales:** almacenan información binaria.
-- 🚨 **Sistemas de seguridad:** procesan señales de sensores.
-- 🤖 **Automatización:** controlan máquinas y dispositivos.
-- 🔌 **Circuitos combinacionales:** permiten diseñar sumadores, comparadores y otros sistemas digitales.
-
----
-
-## 🎯 Conclusión
-
-Los sistemas binarios permiten representar la información mediante ceros y unos, mientras que las compuertas lógicas procesan esos valores para producir resultados. Ambos conceptos son fundamentales para comprender el funcionamiento de los circuitos digitales y constituyen una base importante en la formación de Ingeniería en Computación.
-
----
-
-<div align="center">
-
-### ⚡ LÓGICA · BINARIO · DISEÑO DIGITAL ⚡
-
-*Portafolio Digital — Diseño de Circuitos*
-
-**Segundo Ciclo · Universidad Nacional de Loja**
+[🏠 Inicio](./README.md) · [📘 Portada](./Portada.md) · [➡️ Unidad 2](./Unidad_2.md)
 
 </div>

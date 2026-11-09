@@ -33,7 +33,7 @@
 - **Nombre:** Manuel Alejandro Ponce Armijos
 - **Docente:** Ing. Lissette Geoconda López Faicán
 - **Curso:** Segundo Ciclo
-- **Período académico:** Según calendario institucional
+- **Período académico:** Septiembre 2026 – marzo 2027
 
 ---
 

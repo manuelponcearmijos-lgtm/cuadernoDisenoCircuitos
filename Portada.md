@@ -42,6 +42,7 @@ Este portafolio digital recopila el progreso académico desarrollado en la asign
 
 ### 🛠️ Temas y Evidencias
 
+- ⚙️ **Transistores:** tipos, regiones de funcionamiento y diseño de un circuito de conmutación con LED.
 - 🔧 **Circuitos en serie y paralelo:** características y diferencias.
 - 📏 **Leyes de Kirchhoff:** análisis de corrientes y voltajes.
 - 🧮 **Cálculos eléctricos:** aplicación de fórmulas para resolver circuitos.
@@ -87,15 +88,15 @@ Este portafolio digital recopila el progreso académico desarrollado en la asign
 
 ## 🎓 Conclusión General del Aprendizaje
 
-El desarrollo de las tres unidades de la asignatura de **Diseño de Circuitos** permitirá fortalecer progresivamente mis conocimientos sobre electricidad, electrónica y sistemas digitales.
+El portafolio de **Diseño de Circuitos** se encuentra en desarrollo y avanza por unidades.
 
-En la **Unidad 1**, estudiaré las magnitudes eléctricas, los componentes electrónicos, la simbología y los instrumentos de medición, comprendiendo los principios fundamentales del funcionamiento de los circuitos.
+En la **Unidad 1** se documentan las magnitudes eléctricas, la Ley de Ohm, los componentes electrónicos, las fuentes de alimentación, el multímetro y la simbología, que son los principios fundamentales del funcionamiento de los circuitos.
 
-Durante la **Unidad 2**, aplicaré métodos de análisis y cálculos eléctricos para comprender circuitos en serie y paralelo, utilizar las leyes correspondientes y comprobar su comportamiento mediante esquemas y simulaciones.
+La **Unidad 2** recoge el estudio de los transistores y el cálculo de un circuito de conmutación con LED. Los temas de circuitos en serie y paralelo, leyes de Kirchhoff y simulación se irán incorporando.
 
-Finalmente, en la **Unidad 3**, desarrollaré conocimientos relacionados con los sistemas numéricos, las compuertas lógicas, las tablas de verdad y el álgebra de Boole, aplicándolos al diseño y la simulación de circuitos digitales.
+La **Unidad 3** reúne los sistemas binarios, las compuertas lógicas y las tablas de verdad. El álgebra de Boole y el diseño y simulación de circuitos digitales se irán incorporando.
 
-En conjunto, esta asignatura contribuirá al desarrollo del pensamiento lógico, la capacidad de análisis y las habilidades prácticas necesarias para diseñar, interpretar y verificar circuitos, conocimientos importantes para mi formación como estudiante de Ingeniería en Computación.
+En conjunto, la asignatura contribuye al desarrollo del pensamiento lógico, la capacidad de análisis y las habilidades prácticas necesarias para diseñar, interpretar y verificar circuitos, conocimientos importantes para la formación como estudiante de Ingeniería en Computación.
 
 ---
 
@@ -111,8 +112,6 @@ En conjunto, esta asignatura contribuirá al desarrollo del pensamiento lógico,
 4. Electronics Tutorials, “Electronics Tutorials.” [En línea]. Disponible en: https://www.electronics-tutorials.ws/
 
 5. M. M. Mano y M. D. Ciletti, *Digital Design*, 6.ª ed. Pearson, 2017.
-
-**Nota:** estos recursos sirven como bibliografía inicial. Las referencias deberán ajustarse a los contenidos realmente estudiados y a las normas bibliográficas exigidas por el docente.
 
 </details>
 
