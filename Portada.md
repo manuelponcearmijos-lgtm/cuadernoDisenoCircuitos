@@ -4,15 +4,22 @@
 
 <div align="center">
 
+<sub>UNIVERSIDAD NACIONAL DE LOJA · INGENIERÍA EN COMPUTACIÓN</sub>
+
 # 📓 CUADERNO DE APUNTES 📓
 
 ## ⚡ Diseño de Circuitos ⚡
 
-### Universidad Nacional de Loja
+<sub>⚪━━━━━⚪━━━━━⚪━━━━━⚪━━━━━⚪━━━━━⚪━━━━━⚪</sub>
 
 ![Asignatura](https://img.shields.io/badge/ASIGNATURA-DISEÑO_DE_CIRCUITOS-00BFFF?style=for-the-badge)
 ![Ciclo](https://img.shields.io/badge/CICLO-2-0078D4?style=for-the-badge)
 ![Período](https://img.shields.io/badge/PERÍODO-SEP_2026_–_MAR_2027-7B2CBF?style=for-the-badge)
+
+![Unidades](https://img.shields.io/badge/UNIDADES-3-30363D?style=flat-square)
+![Semanas](https://img.shields.io/badge/SEMANAS-16-30363D?style=flat-square)
+![Formato](https://img.shields.io/badge/FORMATO-APUNTES_Y_EJERCICIOS-30363D?style=flat-square)
+![Markdown](https://img.shields.io/badge/Markdown-000000?style=flat-square&logo=markdown&logoColor=white)
 
 </div>
 
@@ -20,16 +27,18 @@
 
 <div align="center">
 
-| 🏛️ Datos del cuaderno | |
-|---|---|
-| **Institución** | Universidad Nacional de Loja |
-| **Facultad** | Facultad de la Energía, las Industrias y los Recursos Naturales No Renovables |
-| **Carrera** | Ingeniería en Computación |
-| **Asignatura** | Diseño de Circuitos — Segundo ciclo |
-| **Estudiante** | Manuel Alejandro Ponce Armijos |
-| **Docente** | Ing. Lissette Geoconda López Faicán |
-| **Período académico** | Septiembre 2026 – marzo 2027 |
-| **Lugar** | Loja, Ecuador |
+### 🏷️ Ficha del cuaderno
+
+| | |
+|:---:|---|
+| 🏛️ **Institución** | Universidad Nacional de Loja |
+| 🏢 **Facultad** | Facultad de la Energía, las Industrias y los Recursos Naturales No Renovables |
+| 💻 **Carrera** | Ingeniería en Computación |
+| ⚡ **Asignatura** | Diseño de Circuitos — Segundo ciclo |
+| 👨‍🎓 **Estudiante** | Manuel Alejandro Ponce Armijos |
+| 👩‍🏫 **Docente** | Ing. Lissette Geoconda López Faicán |
+| 📅 **Período académico** | Septiembre 2026 – marzo 2027 |
+| 📍 **Lugar** | Loja, Ecuador |
 
 </div>
 
@@ -37,35 +46,72 @@
 
 ## ✍️ Sobre este cuaderno
 
-Este cuaderno reúne mis **apuntes teóricos y ejercicios resueltos a mano** de la asignatura Diseño de Circuitos. Está organizado por **unidades** y, dentro de cada una, por **semanas**: cada semana trata un tema, con su definición, ideas clave, fórmulas, un ejemplo resuelto paso a paso y un recuadro «Recuerda» para repasar rápidamente.
+> [!NOTE]
+> Este cuaderno reúne mis **apuntes teóricos y ejercicios resueltos a mano** de la asignatura Diseño de Circuitos. Está organizado por **unidades** y, dentro de cada una, por **semanas**: cada semana trata un tema, con su definición, ideas clave, fórmulas, un ejemplo resuelto paso a paso y un recuadro «Recuerda» para repasar rápidamente.
 
 ---
 
 ## 📚 Unidades
 
-| Unidad | Título | Semanas | Estado | Acceso |
-|:---:|---|:---:|:---:|:---:|
-| **1** | Fundamentos de la Electrónica Digital | 5 | ![Disponible](https://img.shields.io/badge/-DISPONIBLE-2EA043?style=flat-square) | [📖 Abrir Unidad 1](./Unidad_1.md) |
-| **2** | Por definir | 5 | ![Próximamente](https://img.shields.io/badge/-PRÓXIMAMENTE-8B949E?style=flat-square) | Próximamente |
-| **3** | Por definir | 6 | ![Próximamente](https://img.shields.io/badge/-PRÓXIMAMENTE-8B949E?style=flat-square) | Próximamente |
+<table>
+  <tr>
+    <td align="center" width="33%">
+      <h3>⚡ Unidad 1</h3>
+      <b>Fundamentos de la Electrónica Digital</b><br><br>
+      <img src="https://img.shields.io/badge/SEMANAS-5-0078D4?style=flat-square" alt="5 semanas"><br>
+      <img src="https://img.shields.io/badge/-DISPONIBLE-2EA043?style=flat-square" alt="Disponible"><br><br>
+      <a href="./Unidad_1.md"><img src="https://img.shields.io/badge/📖_ABRIR_UNIDAD_1-0078D4?style=for-the-badge" alt="Abrir Unidad 1"></a>
+    </td>
+    <td align="center" width="33%">
+      <h3>🔌 Unidad 2</h3>
+      <b>Próximamente</b><br><br>
+      <img src="https://img.shields.io/badge/SEMANAS-5-8B949E?style=flat-square" alt="5 semanas"><br>
+      <img src="https://img.shields.io/badge/-PRÓXIMAMENTE-8B949E?style=flat-square" alt="Próximamente"><br><br>
+      <img src="https://img.shields.io/badge/🔒_EN_PREPARACIÓN-30363D?style=for-the-badge" alt="En preparación">
+    </td>
+    <td align="center" width="33%">
+      <h3>💡 Unidad 3</h3>
+      <b>Próximamente</b><br><br>
+      <img src="https://img.shields.io/badge/SEMANAS-6-8B949E?style=flat-square" alt="6 semanas"><br>
+      <img src="https://img.shields.io/badge/-PRÓXIMAMENTE-8B949E?style=flat-square" alt="Próximamente"><br><br>
+      <img src="https://img.shields.io/badge/🔒_EN_PREPARACIÓN-30363D?style=for-the-badge" alt="En preparación">
+    </td>
+  </tr>
+</table>
+
+```mermaid
+flowchart LR
+    U1["⚡ Unidad 1<br/>5 semanas<br/>Disponible"] --> U2["🔌 Unidad 2<br/>5 semanas<br/>Próximamente"]
+    U2 --> U3["💡 Unidad 3<br/>6 semanas<br/>Próximamente"]
+    classDef lista fill:#0078D4,stroke:#004E8C,color:#ffffff
+    classDef pronto fill:#8B949E,stroke:#57606A,color:#ffffff
+    class U1 lista
+    class U2,U3 pronto
+```
 
 <details>
 <summary><b>📂 ⚡ Unidad 1 · Fundamentos de la Electrónica Digital (5 semanas)</b></summary>
 
+<br>
+
 | Semana | Tema |
 |:---:|---|
-| 1 | Transistores |
-| 2 | Álgebra de Boole y mapas de Karnaugh de tres y cuatro variables |
-| 3 | Formas canónicas, teoremas y leyes de De Morgan, simplificación algebraica |
-| 4 | Suma de productos y producto de sumas, minitérminos y maxitérminos |
-| 5 | Bloques combinacionales aritméticos |
+| 🔌 1 | Transistores |
+| 🧮 2 | Álgebra de Boole y mapas de Karnaugh de tres y cuatro variables |
+| 🧩 3 | Formas canónicas, teoremas y leyes de De Morgan, simplificación algebraica |
+| 📋 4 | Suma de productos y producto de sumas, minitérminos y maxitérminos |
+| ➕ 5 | Bloques combinacionales aritméticos |
 
-[![Acceder a Unidad 1](https://img.shields.io/badge/ACCEDER_A_LA_UNIDAD_1-VER_APUNTES-0078D4?style=for-the-badge&logo=github&logoColor=white)](./Unidad_1.md)
+<p align="center">
+  <a href="./Unidad_1.md"><img src="https://img.shields.io/badge/ACCEDER_A_LA_UNIDAD_1-VER_APUNTES-0078D4?style=for-the-badge&logo=github&logoColor=white" alt="Acceder a Unidad 1"></a>
+</p>
 
 </details>
 
 <details>
 <summary><b>📂 🔌 Unidad 2 · Próximamente (5 semanas)</b></summary>
+
+<br>
 
 Los apuntes de esta unidad se añadirán a medida que avance el ciclo.
 
@@ -73,6 +119,8 @@ Los apuntes de esta unidad se añadirán a medida que avance el ciclo.
 
 <details>
 <summary><b>📂 💡 Unidad 3 · Próximamente (6 semanas)</b></summary>
+
+<br>
 
 Los apuntes de esta unidad se añadirán a medida que avance el ciclo.
 
@@ -84,13 +132,19 @@ Los apuntes de esta unidad se añadirán a medida que avance el ciclo.
 
 ### ⚡ Unidad 1
 
+![Unidad 1](https://img.shields.io/badge/UNIDAD_1-CONCLUSIÓN-0078D4?style=flat-square)
+
 En la **Unidad 1** comprendí cómo el **transistor BJT**, trabajando entre corte y saturación, permite representar los valores lógicos 0 y 1. A partir de ellos estudié el **álgebra de Boole**, sus teoremas y las **leyes de De Morgan**, que sirven para escribir y simplificar funciones lógicas, y apliqué los **mapas de Karnaugh** de tres y cuatro variables como método gráfico de simplificación. Aprendí a pasar de una tabla de verdad a su **forma canónica** mediante **minitérminos y maxitérminos**, y a expresarla como suma de productos o producto de sumas. Finalmente, integré estos conocimientos en el diseño de **bloques aritméticos** —semisumador, sumador completo, sumador de 4 bits y restador con complemento a 2—, que constituyen la base de la unidad aritmética de un computador.
 
 ### 🔌 Unidad 2
 
+![Unidad 2](https://img.shields.io/badge/UNIDAD_2-PENDIENTE-8B949E?style=flat-square)
+
 *Se redactará al finalizar la unidad.*
 
 ### 💡 Unidad 3
+
+![Unidad 3](https://img.shields.io/badge/UNIDAD_3-PENDIENTE-8B949E?style=flat-square)
 
 *Se redactará al finalizar la unidad.*
 
@@ -98,6 +152,8 @@ En la **Unidad 1** comprendí cómo el **transistor BJT**, trabajando entre cort
 
 <details>
 <summary><b>📚 Bibliografía (formato IEEE)</b></summary>
+
+<br>
 
 [1] M. M. Mano y M. D. Ciletti, *Digital Design: With an Introduction to the Verilog HDL, VHDL, and SystemVerilog*, 6.ª ed. Hoboken, NJ, EE. UU. (verificar): Pearson, 2018.
 
@@ -109,10 +165,10 @@ En la **Unidad 1** comprendí cómo el **transistor BJT**, trabajando entre cort
 
 </details>
 
----
-
 <details>
 <summary><b>🤖 Declaración de Uso de Inteligencia Artificial Generativa</b></summary>
+
+<br>
 
 En la elaboración de este cuaderno se utilizó **Claude** (Anthropic) como herramienta de apoyo.
 
@@ -129,10 +185,12 @@ En la elaboración de este cuaderno se utilizó **Claude** (Anthropic) como herr
 
 <div align="center">
 
+<sub>⚪━━━━━⚪━━━━━⚪━━━━━⚪━━━━━⚪━━━━━⚪━━━━━⚪</sub>
+
 ⚡ **APUNTES · LÓGICA · DISEÑO · CIRCUITOS** ⚡
 
 📍 *Loja, Ecuador · Septiembre 2026 – marzo 2027*
 
-[🏠 Inicio del repositorio](./README.md)
+<a href="./README.md"><img src="https://img.shields.io/badge/🏠_INICIO_DEL_REPOSITORIO-30363D?style=for-the-badge" alt="Inicio del repositorio"></a>
 
 </div>

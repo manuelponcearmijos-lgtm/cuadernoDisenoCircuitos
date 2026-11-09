@@ -1,14 +1,23 @@
 <div align="center">
 
+<sub>📓 CUADERNO DE APUNTES · DISEÑO DE CIRCUITOS · SEGUNDO CICLO</sub>
+
 # ⚡ UNIDAD 1 ⚡
 
-## Fundamentos de la Electrónica Digital
-
-### 📓 Cuaderno de Apuntes · Diseño de Circuitos · Segundo Ciclo
+## 🔌 Fundamentos de la Electrónica Digital 💡
 
 ![Unidad](https://img.shields.io/badge/UNIDAD-1-0078D4?style=for-the-badge)
 ![Semanas](https://img.shields.io/badge/SEMANAS-5-00BFFF?style=for-the-badge)
 ![Tema](https://img.shields.io/badge/ELECTRÓNICA-DIGITAL-7B2CBF?style=for-the-badge)
+
+![Transistores](https://img.shields.io/badge/Transistores-FF8C00?style=flat-square)
+![Boole](https://img.shields.io/badge/Álgebra_de_Boole-0078D4?style=flat-square)
+![Karnaugh](https://img.shields.io/badge/Mapas_de_Karnaugh-0078D4?style=flat-square)
+![De Morgan](https://img.shields.io/badge/De_Morgan-7B2CBF?style=flat-square)
+![SOP POS](https://img.shields.io/badge/SOP_·_POS-2EA043?style=flat-square)
+![Sumadores](https://img.shields.io/badge/Sumadores-D73A49?style=flat-square)
+
+<sub>Manuel Alejandro Ponce Armijos · Universidad Nacional de Loja · Septiembre 2026 – marzo 2027</sub>
 
 </div>
 
@@ -27,6 +36,27 @@
 | 5 | Bloques combinacionales aritméticos | Semisumador, sumador completo, sumador de 4 bits y restador. | [▶️ Semana 5](#semana-5) |
 | — | Conclusión de la unidad | Síntesis de lo aprendido. | [▶️ Conclusión](#conclusion) |
 
+### 🗺️ Ruta de la unidad
+
+```mermaid
+flowchart LR
+    S1["🔌 Semana 1<br/>Transistores"] --> S2["🧮 Semana 2<br/>Boole y Karnaugh"]
+    S2 --> S3["🧩 Semana 3<br/>De Morgan y canónicas"]
+    S3 --> S4["📋 Semana 4<br/>SOP y POS"]
+    S4 --> S5["➕ Semana 5<br/>Bloques aritméticos"]
+    classDef s1 fill:#FF8C00,stroke:#B35F00,color:#ffffff
+    classDef s2 fill:#0078D4,stroke:#004E8C,color:#ffffff
+    classDef s3 fill:#7B2CBF,stroke:#4E1A7A,color:#ffffff
+    classDef s4 fill:#2EA043,stroke:#1A6B2B,color:#ffffff
+    classDef s5 fill:#D73A49,stroke:#8E1F2A,color:#ffffff
+    class S1 s1
+    class S2 s2
+    class S3 s3
+    class S4 s4
+    class S5 s5
+```
+
+> [!TIP]
 > 💡 **Tip:** cada semana está plegada. Haz clic en **«Ver apuntes»** para desplegarla.
 
 ---
@@ -34,6 +64,11 @@
 <a id="semana-1"></a>
 
 ## 🔌 Semana 1 · Transistores BJT
+
+<p align="center">
+  <img src="https://img.shields.io/badge/SEMANA-1-FF8C00?style=for-the-badge" alt="Semana 1">
+  <img src="https://img.shields.io/badge/TEMA-TRANSISTORES_BJT-30363D?style=for-the-badge" alt="Tema">
+</p>
 
 <details>
 <summary><b>📖 Ver apuntes de la Semana 1</b></summary>
@@ -68,8 +103,17 @@ flowchart LR
     A -- Sí --> C{"¿β·I_B > I_C máx?"}
     C -- Sí --> D["🔴 Saturación<br/>interruptor cerrado"]
     C -- No --> E["🔵 Región activa<br/>amplificador"]
+    classDef corte fill:#2EA043,stroke:#1A6B2B,color:#ffffff
+    classDef sat fill:#D73A49,stroke:#8E1F2A,color:#ffffff
+    classDef act fill:#0078D4,stroke:#004E8C,color:#ffffff
+    classDef pregunta fill:#FFF4E5,stroke:#FF8C00,color:#000000
+    class B corte
+    class D sat
+    class E act
+    class A,C pregunta
 ```
 
+> [!TIP]
 > 💡 **Tip:** en electrónica digital el transistor trabaja solo en **corte** (0 lógico) y **saturación** (1 lógico); la región activa se usa en amplificadores.
 
 ### ✏️ Ejemplo resuelto: encender un LED con un NPN
@@ -117,8 +161,10 @@ $$I_B = \frac{4{,}3}{4700} \approx 0{,}91\ \text{mA} \qquad \beta_{min} I_B = 10
 | 0 V | Corte | Apagado |
 | 5 V | Saturación | Encendido (≈ 8,5 mA) |
 
+> [!WARNING]
 > ⚠️ **Cuidado:** sin $R_B$ la unión base‑emisor recibe una corriente excesiva y el transistor puede dañarse; sin $R_C$ el LED se quema.
 
+> [!IMPORTANT]
 > 📌 **Recuerda**
 > - NPN: conduce cuando la base es ≈ 0,7 V más positiva que el emisor.
 > - Interruptor = corte ↔ saturación. Amplificador = región activa.
@@ -126,13 +172,22 @@ $$I_B = \frac{4{,}3}{4700} \approx 0{,}91\ \text{mA} \qquad \beta_{min} I_B = 10
 
 </details>
 
-[⬆️ Volver al índice](#indice) · [⬅️ Portada](./Portada.md) · [➡️ Semana siguiente](#semana-2)
+<p align="center">
+  <a href="./Portada.md"><img src="https://img.shields.io/badge/⬅️_PORTADA-0078D4?style=for-the-badge" alt="Portada"></a>
+  <a href="#indice"><img src="https://img.shields.io/badge/⬆️_VOLVER_AL_ÍNDICE-30363D?style=for-the-badge" alt="Volver al índice"></a>
+  <a href="#semana-2"><img src="https://img.shields.io/badge/SEMANA_SIGUIENTE_➡️-7B2CBF?style=for-the-badge" alt="Semana siguiente"></a>
+</p>
 
 ---
 
 <a id="semana-2"></a>
 
 ## 🧮 Semana 2 · Álgebra de Boole y mapas de Karnaugh
+
+<p align="center">
+  <img src="https://img.shields.io/badge/SEMANA-2-0078D4?style=for-the-badge" alt="Semana 2">
+  <img src="https://img.shields.io/badge/TEMA-BOOLE_Y_KARNAUGH-30363D?style=for-the-badge" alt="Tema">
+</p>
 
 <details>
 <summary><b>📖 Ver apuntes de la Semana 2</b></summary>
@@ -154,6 +209,7 @@ El **álgebra de Boole** trabaja con variables que solo toman los valores **0** 
 | Asociativa | $A + (B + C) = (A + B) + C$ | $A(BC) = (AB)C$ |
 | Distributiva | $A + BC = (A + B)(A + C)$ | $A(B + C) = AB + AC$ |
 
+> [!TIP]
 > 💡 **Principio de dualidad:** si una igualdad es válida, también lo es su dual, que se obtiene intercambiando $+ \leftrightarrow \cdot$ y $0 \leftrightarrow 1$.
 
 ### 🗺️ Mapas de Karnaugh
@@ -201,8 +257,10 @@ Simplificar $F(A,B,C,D) = \sum m(0, 1, 2, 5, 8, 9, 10)$.
 
 $$\boxed{F = \overline{B}\,\overline{C} + \overline{B}\,\overline{D} + \overline{A}\,\overline{C}D}$$
 
+> [!WARNING]
 > ⚠️ **Cuidado:** el orden de filas y columnas es **00, 01, 11, 10**, no el binario natural. Si usas 00, 01, 10, 11 los vecinos dejan de diferir en un solo bit y las agrupaciones son incorrectas.
 
+> [!IMPORTANT]
 > 📌 **Recuerda**
 > - Grupo de $2^k$ celdas elimina $k$ variables.
 > - Grupos grandes → términos cortos; pocos grupos → menos términos.
@@ -210,13 +268,22 @@ $$\boxed{F = \overline{B}\,\overline{C} + \overline{B}\,\overline{D} + \overline
 
 </details>
 
-[⬆️ Volver al índice](#indice) · [⬅️ Semana anterior](#semana-1) · [➡️ Semana siguiente](#semana-3)
+<p align="center">
+  <a href="#semana-1"><img src="https://img.shields.io/badge/⬅️_SEMANA_ANTERIOR-0078D4?style=for-the-badge" alt="Semana anterior"></a>
+  <a href="#indice"><img src="https://img.shields.io/badge/⬆️_VOLVER_AL_ÍNDICE-30363D?style=for-the-badge" alt="Volver al índice"></a>
+  <a href="#semana-3"><img src="https://img.shields.io/badge/SEMANA_SIGUIENTE_➡️-7B2CBF?style=for-the-badge" alt="Semana siguiente"></a>
+</p>
 
 ---
 
 <a id="semana-3"></a>
 
 ## 🧩 Semana 3 · Formas canónicas, teoremas de De Morgan y simplificación algebraica
+
+<p align="center">
+  <img src="https://img.shields.io/badge/SEMANA-3-7B2CBF?style=for-the-badge" alt="Semana 3">
+  <img src="https://img.shields.io/badge/TEMA-DE_MORGAN_Y_FORMAS_CANÓNICAS-30363D?style=for-the-badge" alt="Tema">
+</p>
 
 <details>
 <summary><b>📖 Ver apuntes de la Semana 3</b></summary>
@@ -288,8 +355,10 @@ Se eliminan repetidos ($A\overline{B}C$ aparece dos veces):
 
 $$\boxed{F = \overline{A}\,\overline{B}C + A\overline{B}\,\overline{C} + A\overline{B}C + AB\overline{C} + ABC}$$
 
+> [!WARNING]
 > ⚠️ **Cuidado:** $\overline{AB} \neq \overline{A}\,\overline{B}$. La barra larga sobre un producto **no** se reparte sin cambiar el operador.
 
+> [!IMPORTANT]
 > 📌 **Recuerda**
 > - De Morgan: rompe la barra, cambia el signo.
 > - Cita la ley usada en cada paso de una simplificación.
@@ -297,13 +366,22 @@ $$\boxed{F = \overline{A}\,\overline{B}C + A\overline{B}\,\overline{C} + A\overl
 
 </details>
 
-[⬆️ Volver al índice](#indice) · [⬅️ Semana anterior](#semana-2) · [➡️ Semana siguiente](#semana-4)
+<p align="center">
+  <a href="#semana-2"><img src="https://img.shields.io/badge/⬅️_SEMANA_ANTERIOR-0078D4?style=for-the-badge" alt="Semana anterior"></a>
+  <a href="#indice"><img src="https://img.shields.io/badge/⬆️_VOLVER_AL_ÍNDICE-30363D?style=for-the-badge" alt="Volver al índice"></a>
+  <a href="#semana-4"><img src="https://img.shields.io/badge/SEMANA_SIGUIENTE_➡️-7B2CBF?style=for-the-badge" alt="Semana siguiente"></a>
+</p>
 
 ---
 
 <a id="semana-4"></a>
 
 ## 📋 Semana 4 · Suma de productos, producto de sumas, minitérminos y maxitérminos
+
+<p align="center">
+  <img src="https://img.shields.io/badge/SEMANA-4-2EA043?style=for-the-badge" alt="Semana 4">
+  <img src="https://img.shields.io/badge/TEMA-SOP_POS_MINITÉRMINOS_Y_MAXITÉRMINOS-30363D?style=for-the-badge" alt="Tema">
+</p>
 
 <details>
 <summary><b>📖 Ver apuntes de la Semana 4</b></summary>
@@ -382,10 +460,13 @@ Ambas expresiones dan la misma tabla de verdad.
  B,C ──[AND]──┘                     B,C ──[OR]──┘
 ```
 
+> [!TIP]
 > 💡 **Tip:** usa SOP cuando la función tiene pocos 1 y POS cuando tiene pocos 0: así hay menos términos que escribir.
 
+> [!WARNING]
 > ⚠️ **Cuidado:** en un maxitérmino la regla se invierte: bit **1** → variable **negada**. Es el error más frecuente.
 
+> [!IMPORTANT]
 > 📌 **Recuerda**
 > - $m_i$ → producto, vale 1 en la fila $i$. $M_i$ → suma, vale 0 en la fila $i$.
 > - $\sum m$ usa las filas con 1; $\prod M$ usa las filas con 0.
@@ -393,13 +474,22 @@ Ambas expresiones dan la misma tabla de verdad.
 
 </details>
 
-[⬆️ Volver al índice](#indice) · [⬅️ Semana anterior](#semana-3) · [➡️ Semana siguiente](#semana-5)
+<p align="center">
+  <a href="#semana-3"><img src="https://img.shields.io/badge/⬅️_SEMANA_ANTERIOR-0078D4?style=for-the-badge" alt="Semana anterior"></a>
+  <a href="#indice"><img src="https://img.shields.io/badge/⬆️_VOLVER_AL_ÍNDICE-30363D?style=for-the-badge" alt="Volver al índice"></a>
+  <a href="#semana-5"><img src="https://img.shields.io/badge/SEMANA_SIGUIENTE_➡️-7B2CBF?style=for-the-badge" alt="Semana siguiente"></a>
+</p>
 
 ---
 
 <a id="semana-5"></a>
 
 ## ➕ Semana 5 · Bloques combinacionales aritméticos
+
+<p align="center">
+  <img src="https://img.shields.io/badge/SEMANA-5-D73A49?style=for-the-badge" alt="Semana 5">
+  <img src="https://img.shields.io/badge/TEMA-SUMADORES_Y_RESTADORES-30363D?style=for-the-badge" alt="Tema">
+</p>
 
 <details>
 <summary><b>📖 Ver apuntes de la Semana 5</b></summary>
@@ -450,6 +540,12 @@ flowchart LR
     HA1 -- "AB" --> OR["OR"]
     HA2 -- "Cin·(A⊕B)" --> OR
     OR --> Cout([Cout])
+    classDef ha fill:#D73A49,stroke:#8E1F2A,color:#ffffff
+    classDef puerta fill:#7B2CBF,stroke:#4E1A7A,color:#ffffff
+    classDef io fill:#30363D,stroke:#8B949E,color:#ffffff
+    class HA1,HA2 ha
+    class OR puerta
+    class A,B,Cin,S,Cout io
 ```
 
 ### 🔹 Sumador paralelo de 4 bits (acarreo en cascada)
@@ -463,6 +559,10 @@ flowchart RL
     FA2 -- "C3" --> FA3["FA bit 3<br/>A3 + B3"]
     C0([C0 = 0]) --> FA0
     FA3 --> C4([C4 = acarreo final])
+    classDef fa fill:#D73A49,stroke:#8E1F2A,color:#ffffff
+    classDef io fill:#30363D,stroke:#8B949E,color:#ffffff
+    class FA0,FA1,FA2,FA3 fa
+    class C0,C4 io
 ```
 
 ### ✏️ Ejemplo 1 — Sumar $1011_2 + 0110_2$ ($11 + 6$)
@@ -499,8 +599,10 @@ Restar equivale a sumar el complemento a 2: $A - B = A + \overline{B} + 1$. Se r
 
 Resultado: $S = 0100_2 = 4_{10}$ ✅. El acarreo final $C_4 = 1$ se descarta e indica que el resultado es positivo.
 
+> [!WARNING]
 > ⚠️ **Cuidado:** en el sumador en cascada cada etapa espera el acarreo de la anterior; con muchos bits el retardo crece. Por eso existen sumadores con acarreo anticipado (*carry look‑ahead*).
 
+> [!IMPORTANT]
 > 📌 **Recuerda**
 > - Semisumador: $S = A \oplus B$, $C = AB$ (no tiene $C_{in}$).
 > - Sumador completo: $S = A \oplus B \oplus C_{in}$, $C_{out} = AB + AC_{in} + BC_{in}$.
@@ -508,7 +610,11 @@ Resultado: $S = 0100_2 = 4_{10}$ ✅. El acarreo final $C_4 = 1$ se descarta e i
 
 </details>
 
-[⬆️ Volver al índice](#indice) · [⬅️ Semana anterior](#semana-4) · [➡️ Conclusión](#conclusion)
+<p align="center">
+  <a href="#semana-4"><img src="https://img.shields.io/badge/⬅️_SEMANA_ANTERIOR-0078D4?style=for-the-badge" alt="Semana anterior"></a>
+  <a href="#indice"><img src="https://img.shields.io/badge/⬆️_VOLVER_AL_ÍNDICE-30363D?style=for-the-badge" alt="Volver al índice"></a>
+  <a href="#conclusion"><img src="https://img.shields.io/badge/CONCLUSIÓN_➡️-7B2CBF?style=for-the-badge" alt="Conclusión"></a>
+</p>
 
 ---
 
@@ -518,7 +624,9 @@ Resultado: $S = 0100_2 = 4_{10}$ ✅. El acarreo final $C_4 = 1$ se descarta e i
 
 La Unidad 1 recorre el camino desde el componente físico hasta el bloque funcional. El **transistor BJT** trabajando entre corte y saturación explica cómo un circuito electrónico representa un 0 y un 1. Sobre esos dos valores, el **álgebra de Boole**, sus **teoremas** y las **leyes de De Morgan** permiten escribir y reducir funciones lógicas, mientras que los **mapas de Karnaugh** ofrecen un método gráfico y sistemático para obtener la expresión mínima. Las **formas canónicas** y la notación de **minitérminos y maxitérminos** conectan directamente la tabla de verdad con una expresión SOP o POS lista para implementarse. Finalmente, los **bloques aritméticos** —semisumador, sumador completo, sumador de 4 bits y restador con complemento a 2— muestran cómo todas estas herramientas se combinan para construir la base de la unidad aritmética de un computador.
 
-[⬆️ Volver al índice](#indice)
+<p align="center">
+  <a href="#indice"><img src="https://img.shields.io/badge/⬆️_VOLVER_AL_ÍNDICE-30363D?style=for-the-badge" alt="Volver al índice"></a>
+</p>
 
 ---
 
@@ -528,6 +636,9 @@ La Unidad 1 recorre el camino desde el componente físico hasta el bloque funcio
 
 *Cuaderno de Apuntes — Diseño de Circuitos | Segundo Ciclo*
 
-[🏠 Inicio](./README.md) · [📓 Portada](./Portada.md)
+<a href="./README.md"><img src="https://img.shields.io/badge/🏠_INICIO-30363D?style=for-the-badge" alt="Inicio"></a>
+<a href="./Portada.md"><img src="https://img.shields.io/badge/📓_PORTADA-0078D4?style=for-the-badge" alt="Portada"></a>
+
+<sub>📍 Loja, Ecuador · Universidad Nacional de Loja</sub>
 
 </div>
