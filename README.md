@@ -23,7 +23,7 @@
 <table align="center">
   <tr>
     <td align="center">👨‍🎓<br><b>Estudiante</b><br>Manuel Alejandro Ponce Armijos</td>
-    <td align="center">👩‍🏫<br><b>Docente</b><br>Ing. Lissette Geoconda López Faicán</td>
+    <td align="center">👩‍🏫<br><b>Docente</b><br>Ing. . Luis Darío Sinche Cueva</td>
     <td align="center">📍<br><b>Lugar</b><br>Loja, Ecuador</td>
   </tr>
 </table>
