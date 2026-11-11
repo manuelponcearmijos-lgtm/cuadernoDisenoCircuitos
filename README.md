@@ -23,14 +23,14 @@
 <table align="center">
   <tr>
     <td align="center">👨‍🎓<br><b>Estudiante</b><br>Manuel Alejandro Ponce Armijos</td>
-    <td align="center">👩‍🏫<br><b>Docente</b><br>Ing. . Luis Darío Sinche Cueva</td>
+    <td align="center">👨‍🏫<br><b>Docente</b><br>Ing. Luis Darío Sinche Cueva</td>
     <td align="center">📍<br><b>Lugar</b><br>Loja, Ecuador</td>
   </tr>
 </table>
 
 <table align="center">
   <tr>
-    <td align="center">⚡ <b>Unidad 1</b><br><sub>5 semanas · Disponible</sub></td>
+    <td align="center">⚡ <b>Unidad 1</b><br><sub>4 semanas · Disponible</sub></td>
     <td align="center">🔌 <b>Unidad 2</b><br><sub>5 semanas · Próximamente</sub></td>
     <td align="center">💡 <b>Unidad 3</b><br><sub>6 semanas · Próximamente</sub></td>
   </tr>

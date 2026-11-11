@@ -7,7 +7,7 @@
 ## 🔌 Fundamentos de la Electrónica Digital 💡
 
 ![Unidad](https://img.shields.io/badge/UNIDAD-1-0078D4?style=for-the-badge)
-![Semanas](https://img.shields.io/badge/SEMANAS-5-00BFFF?style=for-the-badge)
+![Semanas](https://img.shields.io/badge/SEMANAS-4-00BFFF?style=for-the-badge)
 ![Tema](https://img.shields.io/badge/ELECTRÓNICA-DIGITAL-7B2CBF?style=for-the-badge)
 
 ![Transistores](https://img.shields.io/badge/Transistores-FF8C00?style=flat-square)
@@ -15,7 +15,6 @@
 ![Karnaugh](https://img.shields.io/badge/Mapas_de_Karnaugh-0078D4?style=flat-square)
 ![De Morgan](https://img.shields.io/badge/De_Morgan-7B2CBF?style=flat-square)
 ![SOP POS](https://img.shields.io/badge/SOP_·_POS-2EA043?style=flat-square)
-![Sumadores](https://img.shields.io/badge/Sumadores-D73A49?style=flat-square)
 
 <sub>Manuel Alejandro Ponce Armijos · Universidad Nacional de Loja · Septiembre 2026 – marzo 2027</sub>
 
@@ -33,7 +32,6 @@
 | 2 | Álgebra de Boole y mapas de Karnaugh | Postulados de Boole y simplificación gráfica con mapas de 3 y 4 variables. | [▶️ Semana 2](#semana-2) |
 | 3 | Formas canónicas, De Morgan y simplificación | Teoremas, leyes de De Morgan y reducción algebraica paso a paso. | [▶️ Semana 3](#semana-3) |
 | 4 | SOP, POS, minitérminos y maxitérminos | Expresar una función desde su tabla de verdad en Σm y ΠM. | [▶️ Semana 4](#semana-4) |
-| 5 | Bloques combinacionales aritméticos | Semisumador, sumador completo, sumador de 4 bits y restador. | [▶️ Semana 5](#semana-5) |
 | — | Conclusión de la unidad | Síntesis de lo aprendido. | [▶️ Conclusión](#conclusion) |
 
 ### 🗺️ Ruta de la unidad
@@ -43,17 +41,14 @@ flowchart LR
     S1["🔌 Semana 1<br/>Transistores"] --> S2["🧮 Semana 2<br/>Boole y Karnaugh"]
     S2 --> S3["🧩 Semana 3<br/>De Morgan y canónicas"]
     S3 --> S4["📋 Semana 4<br/>SOP y POS"]
-    S4 --> S5["➕ Semana 5<br/>Bloques aritméticos"]
     classDef s1 fill:#FF8C00,stroke:#B35F00,color:#ffffff
     classDef s2 fill:#0078D4,stroke:#004E8C,color:#ffffff
     classDef s3 fill:#7B2CBF,stroke:#4E1A7A,color:#ffffff
     classDef s4 fill:#2EA043,stroke:#1A6B2B,color:#ffffff
-    classDef s5 fill:#D73A49,stroke:#8E1F2A,color:#ffffff
     class S1 s1
     class S2 s2
     class S3 s3
     class S4 s4
-    class S5 s5
 ```
 
 > [!TIP]
@@ -466,140 +461,6 @@ Ambas expresiones dan la misma tabla de verdad.
 <p align="center">
   <a href="#semana-3"><img src="https://img.shields.io/badge/⬅️_SEMANA_ANTERIOR-0078D4?style=for-the-badge" alt="Semana anterior"></a>
   <a href="#indice"><img src="https://img.shields.io/badge/⬆️_VOLVER_AL_ÍNDICE-30363D?style=for-the-badge" alt="Volver al índice"></a>
-  <a href="#semana-5"><img src="https://img.shields.io/badge/SEMANA_SIGUIENTE_➡️-7B2CBF?style=for-the-badge" alt="Semana siguiente"></a>
-</p>
-
----
-
-<a id="semana-5"></a>
-
-## ➕ Semana 5 · Bloques combinacionales aritméticos
-
-<p align="center">
-  <img src="https://img.shields.io/badge/SEMANA-5-D73A49?style=for-the-badge" alt="Semana 5">
-  <img src="https://img.shields.io/badge/TEMA-SUMADORES_Y_RESTADORES-30363D?style=for-the-badge" alt="Tema">
-</p>
-
-<details>
-<summary><b>📖 Ver apuntes de la Semana 5</b></summary>
-
-### 📌 Definición
-
-Un **circuito combinacional** produce salidas que dependen **solo de las entradas actuales** (no tiene memoria). Los bloques **aritméticos** realizan operaciones binarias como la suma y la resta, y son la base de la ALU de un procesador.
-
-### 🔹 Semisumador (half adder)
-
-Suma **dos bits** y produce la suma $S$ y el acarreo $C$.
-
-| A | B | S | C |
-|:---:|:---:|:---:|:---:|
-| 0 | 0 | 0 | 0 |
-| 0 | 1 | 1 | 0 |
-| 1 | 0 | 1 | 0 |
-| 1 | 1 | 0 | 1 |
-
-$$S = A \oplus B \qquad C = A \cdot B$$
-
-### 🔹 Sumador completo (full adder)
-
-Suma **dos bits más el acarreo de entrada** $C_{in}$.
-
-| A | B | $C_{in}$ | S | $C_{out}$ |
-|:---:|:---:|:---:|:---:|:---:|
-| 0 | 0 | 0 | 0 | 0 |
-| 0 | 0 | 1 | 1 | 0 |
-| 0 | 1 | 0 | 1 | 0 |
-| 0 | 1 | 1 | 0 | 1 |
-| 1 | 0 | 0 | 1 | 0 |
-| 1 | 0 | 1 | 0 | 1 |
-| 1 | 1 | 0 | 0 | 1 |
-| 1 | 1 | 1 | 1 | 1 |
-
-$$S = A \oplus B \oplus C_{in} \qquad C_{out} = AB + C_{in}(A \oplus B) = AB + AC_{in} + BC_{in}$$
-
-$C_{out}$ es la **función mayoría** de la Semana 4. Un sumador completo se arma con **dos semisumadores y una OR**:
-
-```mermaid
-flowchart LR
-    A([A]) --> HA1["Semisumador 1"]
-    B([B]) --> HA1
-    HA1 -- "A⊕B" --> HA2["Semisumador 2"]
-    Cin([Cin]) --> HA2
-    HA2 -- "S" --> S([S])
-    HA1 -- "AB" --> OR["OR"]
-    HA2 -- "Cin·(A⊕B)" --> OR
-    OR --> Cout([Cout])
-    classDef ha fill:#D73A49,stroke:#8E1F2A,color:#ffffff
-    classDef puerta fill:#7B2CBF,stroke:#4E1A7A,color:#ffffff
-    classDef io fill:#30363D,stroke:#8B949E,color:#ffffff
-    class HA1,HA2 ha
-    class OR puerta
-    class A,B,Cin,S,Cout io
-```
-
-### 🔹 Sumador paralelo de 4 bits (acarreo en cascada)
-
-Se conectan 4 sumadores completos: el $C_{out}$ de cada etapa es el $C_{in}$ de la siguiente.
-
-```mermaid
-flowchart RL
-    FA0["FA bit 0<br/>A0 + B0"] -- "C1" --> FA1["FA bit 1<br/>A1 + B1"]
-    FA1 -- "C2" --> FA2["FA bit 2<br/>A2 + B2"]
-    FA2 -- "C3" --> FA3["FA bit 3<br/>A3 + B3"]
-    C0([C0 = 0]) --> FA0
-    FA3 --> C4([C4 = acarreo final])
-    classDef fa fill:#D73A49,stroke:#8E1F2A,color:#ffffff
-    classDef io fill:#30363D,stroke:#8B949E,color:#ffffff
-    class FA0,FA1,FA2,FA3 fa
-    class C0,C4 io
-```
-
-### ✏️ Ejemplo 1 — Sumar $1011_2 + 0110_2$ ($11 + 6$)
-
-| Bit | $A_i$ | $B_i$ | $C_{in}$ | $S_i$ | $C_{out}$ |
-|:---:|:---:|:---:|:---:|:---:|:---:|
-| 0 | 1 | 0 | 0 | 1 | 0 |
-| 1 | 1 | 1 | 0 | 0 | 1 |
-| 2 | 0 | 1 | 1 | 0 | 1 |
-| 3 | 1 | 0 | 1 | 0 | 1 |
-
-Resultado: $C_4\,S_3S_2S_1S_0 = 1\,0001_2 = 17_{10}$ ✅
-
-### 🔹 Restador con complemento a 2
-
-Restar equivale a sumar el complemento a 2: $A - B = A + \overline{B} + 1$. Se reutiliza el sumador colocando una **XOR** en cada bit de $B$ y una señal de control $M$:
-
-| $M$ | Entrada al sumador | $C_0$ | Operación |
-|:---:|:---:|:---:|:---:|
-| 0 | $B$ (pues $B \oplus 0 = B$) | 0 | $A + B$ |
-| 1 | $\overline{B}$ (pues $B \oplus 1 = \overline{B}$) | 1 | $A - B$ |
-
-### ✏️ Ejemplo 2 — Restar $0111_2 - 0011_2$ ($7 - 3$)
-
-1. Complemento a 1 de $B$: $0011 \rightarrow 1100$
-2. Se suma con $C_0 = 1$: $0111 + 1100 + 1$
-
-| Bit | $A_i$ | $\overline{B_i}$ | $C_{in}$ | $S_i$ | $C_{out}$ |
-|:---:|:---:|:---:|:---:|:---:|:---:|
-| 0 | 1 | 0 | 1 | 0 | 1 |
-| 1 | 1 | 0 | 1 | 0 | 1 |
-| 2 | 1 | 1 | 1 | 1 | 1 |
-| 3 | 0 | 1 | 1 | 0 | 1 |
-
-Resultado: $S = 0100_2 = 4_{10}$ ✅. El acarreo final $C_4 = 1$ se descarta e indica que el resultado es positivo.
-
-> ⚠️ **Cuidado:** en el sumador en cascada cada etapa espera el acarreo de la anterior; con muchos bits el retardo crece. Por eso existen sumadores con acarreo anticipado (*carry look‑ahead*).
-
-> 📌 **Recuerda**
-> - Semisumador: $S = A \oplus B$, $C = AB$ (no tiene $C_{in}$).
-> - Sumador completo: $S = A \oplus B \oplus C_{in}$, $C_{out} = AB + AC_{in} + BC_{in}$.
-> - $A - B = A + \overline{B} + 1$: XOR con $M = 1$ y $C_0 = 1$.
-
-</details>
-
-<p align="center">
-  <a href="#semana-4"><img src="https://img.shields.io/badge/⬅️_SEMANA_ANTERIOR-0078D4?style=for-the-badge" alt="Semana anterior"></a>
-  <a href="#indice"><img src="https://img.shields.io/badge/⬆️_VOLVER_AL_ÍNDICE-30363D?style=for-the-badge" alt="Volver al índice"></a>
   <a href="#conclusion"><img src="https://img.shields.io/badge/CONCLUSIÓN_➡️-7B2CBF?style=for-the-badge" alt="Conclusión"></a>
 </p>
 
@@ -609,7 +470,7 @@ Resultado: $S = 0100_2 = 4_{10}$ ✅. El acarreo final $C_4 = 1$ se descarta e i
 
 ## 🎯 Conclusión de la Unidad 1
 
-La Unidad 1 recorre el camino desde el componente físico hasta el bloque funcional. El **transistor BJT** trabajando entre corte y saturación explica cómo un circuito electrónico representa un 0 y un 1. Sobre esos dos valores, el **álgebra de Boole**, sus **teoremas** y las **leyes de De Morgan** permiten escribir y reducir funciones lógicas, mientras que los **mapas de Karnaugh** ofrecen un método gráfico y sistemático para obtener la expresión mínima. Las **formas canónicas** y la notación de **minitérminos y maxitérminos** conectan directamente la tabla de verdad con una expresión SOP o POS lista para implementarse. Finalmente, los **bloques aritméticos** —semisumador, sumador completo, sumador de 4 bits y restador con complemento a 2— muestran cómo todas estas herramientas se combinan para construir la base de la unidad aritmética de un computador.
+La Unidad 1 recorre el camino desde el componente físico hasta la expresión lógica lista para implementarse. El **transistor BJT** trabajando entre corte y saturación explica cómo un circuito electrónico representa un 0 y un 1. Sobre esos dos valores, el **álgebra de Boole**, sus **teoremas** y las **leyes de De Morgan** permiten escribir y reducir funciones lógicas, mientras que los **mapas de Karnaugh** ofrecen un método gráfico y sistemático para obtener la expresión mínima. Finalmente, las **formas canónicas** y la notación de **minitérminos y maxitérminos** conectan directamente la tabla de verdad con una expresión SOP o POS lista para implementarse en un circuito digital.
 
 <p align="center">
   <a href="#indice"><img src="https://img.shields.io/badge/⬆️_VOLVER_AL_ÍNDICE-30363D?style=for-the-badge" alt="Volver al índice"></a>
