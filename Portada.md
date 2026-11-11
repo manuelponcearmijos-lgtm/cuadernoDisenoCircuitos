@@ -176,7 +176,7 @@ En la elaboración de este cuaderno se utilizó **Claude** (Anthropic) como herr
 - **📚 Ética académica:** la herramienta se empleó como apoyo al estudio, sin sustituir el aprendizaje ni la comprensión de los conceptos.
 - **⚖️ Limitaciones:** se tuvo en cuenta que la inteligencia artificial puede generar información incorrecta, por lo que los resultados se contrastaron con la bibliografía.
 - **🔒 Responsabilidad:** el estudiante es responsable de la exactitud del contenido y de la autenticidad del trabajo presentado.
-- **🌐 Transparencia:** el uso de esta herramienta se declara en esta sección de acuerdo con las indicaciones de la docente.
+- **🌐 Transparencia:** el uso de esta herramienta se declara en esta sección de acuerdo con las indicaciones del docente.
 
 </details>
 
