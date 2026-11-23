@@ -64,10 +64,10 @@
     </td>
     <td align="center" width="33%">
       <h3>🔌 Unidad 2</h3>
-      <b>Próximamente</b><br><br>
-      <img src="https://img.shields.io/badge/SEMANAS-5-8B949E?style=flat-square" alt="5 semanas"><br>
-      <img src="https://img.shields.io/badge/-PRÓXIMAMENTE-8B949E?style=flat-square" alt="Próximamente"><br><br>
-      <img src="https://img.shields.io/badge/🔒_EN_PREPARACIÓN-30363D?style=for-the-badge" alt="En preparación">
+      <b>Circuitos Combinacionales</b><br><br>
+      <img src="https://img.shields.io/badge/SEMANAS-5-0078D4?style=flat-square" alt="5 semanas"><br>
+      <img src="https://img.shields.io/badge/-EN_CURSO-FF8C00?style=flat-square" alt="En curso"><br><br>
+      <a href="./Unidad_2.md"><img src="https://img.shields.io/badge/📖_ABRIR_UNIDAD_2-0078D4?style=for-the-badge" alt="Abrir Unidad 2"></a>
     </td>
     <td align="center" width="33%">
       <h3>💡 Unidad 3</h3>
@@ -81,12 +81,14 @@
 
 ```mermaid
 flowchart LR
-    U1["⚡ Unidad 1<br/>4 semanas<br/>Disponible"] --> U2["🔌 Unidad 2<br/>5 semanas<br/>Próximamente"]
+    U1["⚡ Unidad 1<br/>4 semanas<br/>Disponible"] --> U2["🔌 Unidad 2<br/>5 semanas<br/>En curso"]
     U2 --> U3["💡 Unidad 3<br/>6 semanas<br/>Próximamente"]
     classDef lista fill:#0078D4,stroke:#004E8C,color:#ffffff
+    classDef curso fill:#FF8C00,stroke:#B35F00,color:#ffffff
     classDef pronto fill:#8B949E,stroke:#57606A,color:#ffffff
     class U1 lista
-    class U2,U3 pronto
+    class U2 curso
+    class U3 pronto
 ```
 
 <details>
@@ -108,11 +110,20 @@ flowchart LR
 </details>
 
 <details>
-<summary><b>📂 🔌 Unidad 2 · Próximamente (5 semanas)</b></summary>
+<summary><b>📂 🔌 Unidad 2 · Circuitos Combinacionales (5 semanas)</b></summary>
 
 <br>
 
-Los apuntes de esta unidad se añadirán a medida que avance el ciclo.
+| Semana | Tema |
+|:---:|---|
+| 🔀 1 | Multiplexores, demultiplexores, codificadores y decodificadores |
+| ⏳ 2–5 | Próximamente |
+
+<p align="center">
+  <a href="./Unidad_2.md"><img src="https://img.shields.io/badge/ACCEDER_A_LA_UNIDAD_2-VER_APUNTES-0078D4?style=for-the-badge&logo=github&logoColor=white" alt="Acceder a Unidad 2"></a>
+</p>
+
+Las semanas restantes se añadirán a medida que avance el ciclo.
 
 </details>
 

@@ -31,7 +31,7 @@
 <table align="center">
   <tr>
     <td align="center">⚡ <b>Unidad 1</b><br><sub>4 semanas · Disponible</sub></td>
-    <td align="center">🔌 <b>Unidad 2</b><br><sub>5 semanas · Próximamente</sub></td>
+    <td align="center">🔌 <b>Unidad 2</b><br><sub>5 semanas · En curso</sub></td>
     <td align="center">💡 <b>Unidad 3</b><br><sub>6 semanas · Próximamente</sub></td>
   </tr>
 </table>
@@ -39,6 +39,7 @@
 <p align="center">
   <a href="./Portada.md"><img src="https://img.shields.io/badge/📓_ABRIR_EL_CUADERNO-VER_PORTADA-0078D4?style=for-the-badge" alt="Abrir el cuaderno"></a>
   <a href="./Unidad_1.md"><img src="https://img.shields.io/badge/⚡_IR_A_LA_UNIDAD_1-7B2CBF?style=for-the-badge" alt="Ir a la Unidad 1"></a>
+  <a href="./Unidad_2.md"><img src="https://img.shields.io/badge/🔌_IR_A_LA_UNIDAD_2-FF8C00?style=for-the-badge" alt="Ir a la Unidad 2"></a>
 </p>
 
 ---
